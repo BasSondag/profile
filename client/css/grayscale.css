@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/louisbourg_lighthouse.jpg) no-repeat bottom center scroll;
+    background: url(https://s3-us-west-1.amazonaws.com/basfotos/12/Louisbourg_Lighthouse+copy.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -265,7 +265,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/IMG_3030.jpg) no-repeat center center scroll;
+    background: url(https://s3-us-west-1.amazonaws.com/basfotos/12/IMG_3030+copy.JPG) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -275,7 +275,7 @@ a:focus {
 
 .projects {
     width: 30%;
-    height: 150px;
+    height: auto;
     display: inline-block;
     vertical-align: top;
     border: 2px solid #42dca3;

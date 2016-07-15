@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bas Sondag</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+    <script src='app.js'></script>
+    <script src= "controllers/portefolios/project1Controller.js"></script>
+    <script src="factories/portefolioFactory.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Top</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Bas Sondag</h1>
+                        <p class="intro-text">Fullstack Web Developer & Former Manager of Optical Store<br></p>
+                        <ul class="ul">
+                            <li class="toplist">Web Fundamentals: HTML, CSS, JavaScript, jQuery</li>
+                            <li class="toplist">Stacks: MEAN, Python, Ruby on Rails </li>
+
+
+                        </ul>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>about me</h2>
+
+                <p>Hi, I'm Bas Sondag - I've recently moved from Utrecht, the Netherlands to San Jose, United States. In the Netherlands I was a manager of an optical store and contactlens specialist for 16 years with the chain <a href="http://eyewish.nl">Eye Wish Opticiens</a>. </p>
+                <p>Immersing myself in a new country was not exciting enough. I also wanted to learn to code and make a complete career switch. Upon further research I enrolled in <a href="http://codingdojo.com/">Coding Dojo's</a> Onsite Flex Bootcamp.</p>
+                <p>In 1100 hours I became a fully functional developer in MEAN, Python and Ruby on Rails. It's a pretty amazing feeling that I can create web applications from front end to back end all by myself. </p>
+                <a href="#download" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Projects</h2>
+                    <div class="row">
+                        <div class="projects" id="lunchbuddys">
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                           
+                                <img src="./img/lunchbuddys.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                         <div class="projects" id="lunchbuddys">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                           
+                                <img src="./img/secrets.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="projects" id="lunchbuddys">
+                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                           
+                                <img src="./img/thegame.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <a href="#contact" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Me</h2>
+                <p>Feel free to contact me with feedback on my projects, give me suggestions, or if you're just interested to know more about how, why and what I did!</p>
+                <p id="email"><a href="mailto:bassondag@icloud.com">bassondag@icloud.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/bas-sondag" class="btn btn-default btn-lg"><span id="btn" class="network-name">Linked</span> <i class="fa fa-linkedin fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/BasSondag" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p id="copy">Copyright &copy; Bas Sondag 2016</p>
+        </div>
+    </footer>
+
+
+ <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- lunchbuddys --> 
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal" ng-click="dismissModal()">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>LunchBuddys</h2>
+                            <a href="http://www.lunchbuddys.com" class="btn btn-default btn-lg">Lunch Buddys<img src="./img/lunchbuddys.png" class="img-responsive img-centered" alt=""></a> 
+
+                            <p>LunchBuddys won the Coding Dojo hackathon in the Python stack. It connects professionals based on their LinkedIn profiles. A new way to expand your network, or to connect similar thinking minds over lunch.</p>
+                            <p> I was responsible for front-end HTML5/CSS, jQuery, Bootstrap, MySQL Database and the MySQL queries in this 2-person project. Technologies used: HTML5, CSS3, Python, Flask, MySQL, jQuery, OAuth 2.0, Bootstrap.</p>
+                            <button type="button" class="btn btn-default" id="project_button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- secrets --> 
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal" ng-click="dismissModal()">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Secrets</h2>
+                            <a href="http://50.112.75.5/" class="btn btn-default btn-lg">Secrets<img src="./img/secrets.png" class="img-responsive img-centered" alt=""></a> 
+                           
+                            <p>Secrets is a Ruby on Rails project. You can share your biggest secrets anonymously with the members of the app, as well as read and like other members' secrets. This project started as an assignment to learn more about TDD.</p>
+                            <p>All the features are built with tests written in RSpec. After it was finished I added Bootstrap and CSS. Technologies used: HTML5, CSS3, Ruby on Rails, PostgreSQL, Active Record, RSpect, Font Awesome, BCrypt, Bootstrap.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- game   --> 
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal" ng-click="dismissModal()">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>The Game</h2>
+                            <a href="http://52.34.112.134/" class="btn btn-default btn-lg">The Game<img src="./img/thegame.png" class="img-responsive img-centered" alt=""></a> 
+                           
+                            <p>The Game was my final 2-person project for MEAN Stack built in 4 days. It is a game where one player is shown a name or object and must give hints to the other player to guess what it is. While the basis for the game is finished, we want to be able to play the game through the chat using Sockets.io.</p>
+                            <p>Responsible for front end chat and the local login through Passport, back end controllers and models, Node.js server MongoDB and Package.json. Technologies used: HTML5, CSS3, JavaScript, Node.js, MongoDB, Mongoose, Passport,  jQuery, Angular, Socket.io, Express, Font Awesome, Bcrypt, Bootstrap.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" ><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>

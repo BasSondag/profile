@@ -75,6 +75,13 @@ a:focus {
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
+    color: #fff;
+
+}
+
+.navbar-custom .navbar-brand:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
@@ -89,7 +96,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #42dca3;
 }
 
 .navbar-custom .nav li a {
@@ -115,7 +122,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    color: #fff;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -188,10 +195,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #42dca3;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #fff;
+    color: #42dca3;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -201,6 +208,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
+    border: 2px solid #fff;
     color: #fff;
     background: rgba(255,255,255,.1);
 }
@@ -297,6 +305,57 @@ a:focus {
     .modal-content {
         background-color: #000;
     }
+
+    .caption:hover {
+    opacity: 1;
+    }
+    .caption {
+        background-color: #000;
+        position: absolute;
+        width: 29.4%;
+        height: 47%;
+        opacity: 0;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+    }
+
+    .caption-content{
+        margin: 40px;
+    }
+
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+
+}
+    
+    .portfolio-modal .close-modal .lr {
+    height: 75px;
+    width: 4.5px;
+    margin-left: 35px;
+    background-color: #42dca3;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051;
+    }
+    
+        .portfolio-modal .close-modal .lr .rl {
+        height: 75px;
+        width: 4.5px;
+        background-color: #42dca3;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        z-index: 1052;
+        }
+
 #map {
     width: 100%;
     height: 200px;

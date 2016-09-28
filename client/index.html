@@ -78,7 +78,7 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <h1 class="brand-heading">Bas Sondag</h1>
                         <p class="intro-text">Fullstack Web Developer & Former Manager of Optical Store<br></p>
                         <ul class="ul">
@@ -203,36 +203,38 @@
     <!-- Portfolio Modals -->
 
     <!-- lunchbuddys --> 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal" ng-click="dismissModal()">
-                <div class="lr">
-                    <div class="rl">
+
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal" >
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>LunchBuddys</h2>
-                            <a href="http://www.lunchbuddys.com" class="btn btn-default btn-lg">Lunch Buddys<img src="./img/lunchbuddys.png" class="img-responsive img-centered" alt=""></a> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2> LunchBuddys</h2>
+                                <a href="http://www.lunchbuddys.com" class="btn btn-default btn-lg"><i class="fa fa-play-circle"></i> Lunch Buddys<img src="./img/lunchbuddys.png" class="img-responsive img-centered" alt=""></a> 
 
-                            <p>LunchBuddys won the Coding Dojo hackathon in the Python stack. It connects professionals based on their LinkedIn profiles. A new way to expand your network, or to connect similar thinking minds over lunch.</p>
-                            <p> I was responsible for front-end HTML5/CSS, jQuery, Bootstrap, MySQL Database and the MySQL queries in this 2-person project. Technologies used: HTML5, CSS3, Python, Flask, MySQL, jQuery, OAuth 2.0, Bootstrap.</p>
-                            <p>Source code: <a href="https://github.com/BasSondag/lunchbuddys">https://github.com/BasSondag/lunchbuddys</a></p>
-                            <button type="button" class="btn btn-default" id="project_button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <p>LunchBuddys won the Coding Dojo hackathon in the Python stack. It connects professionals based on their LinkedIn profiles. A new way to expand your network, or to connect similar thinking minds over lunch.</p>
+                                <p> I was responsible for front-end HTML5/CSS, jQuery, Bootstrap, MySQL Database and the MySQL queries in this 2-person project. Technologies used: HTML5, CSS3, Python, Flask, MySQL, jQuery, OAuth 2.0, Bootstrap.</p>
+                                <p>Source code: <a href="https://github.com/BasSondag/lunchbuddys">https://github.com/BasSondag/lunchbuddys</a></p>
+                                <button type="button" class="btn btn-default" id="project_button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
 
   <!-- secrets --> 
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal" ng-click="dismissModal()">
+            <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
@@ -243,7 +245,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Secrets</h2>
-                            <a href="http://50.112.75.5/" class="btn btn-default btn-lg">Secrets<img src="./img/secrets.png" class="img-responsive img-centered" alt=""></a> 
+                            <a href="http://50.112.75.5/" class="btn btn-default btn-lg"><i class="fa fa-play-circle"></i> Secrets<img src="./img/secrets.png" class="img-responsive img-centered" alt=""></a> 
                            
                             <p>Secrets is a Ruby on Rails project. You can share your biggest secrets anonymously with the members of the app, as well as read and like other members' secrets. This project started as an assignment to learn more about TDD.</p>
                             <p>All the features are built with tests written in RSpec. After it was finished I added Bootstrap and CSS. Technologies used: HTML5, CSS3, Ruby on Rails, PostgreSQL, Active Record, RSpect, Font Awesome, BCrypt, Bootstrap.</p>
@@ -259,7 +261,7 @@
     <!-- game   --> 
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal" ng-click="dismissModal()">
+            <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
@@ -270,7 +272,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>The Game</h2>
-                            <a href="http://52.34.112.134/" class="btn btn-default btn-lg">The Game<img src="./img/thegame.png" class="img-responsive img-centered" alt=""></a> 
+                            <a href="http://52.34.112.134/" class="btn btn-default btn-lg"><i class="fa fa-play-circle"></i> The Game<img src="./img/thegame.png" class="img-responsive img-centered" alt=""></a> 
                            
                             <p>The Game was my final 2-person project for MEAN Stack built in 4 days. It is a game where one player is shown a name or object and must give hints to the other player to guess what it is. While the basis for the game is finished, we want to be able to play the game through the chat using Sockets.io.</p>
                             <p>Responsible for front end chat and the local login through Passport, back end controllers and models, Node.js server MongoDB and Package.json. Technologies used: HTML5, CSS3, JavaScript, Node.js, MongoDB, Mongoose, Passport,  jQuery, Angular, Socket.io, Express, Font Awesome, Bcrypt, Bootstrap.</p>

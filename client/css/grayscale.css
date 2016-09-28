@@ -283,7 +283,7 @@ a:focus {
 
 .projects {
     width: 30%;
-    height: auto;
+    height: 50%;
     display: inline-block;
     vertical-align: top;
     border: 2px solid #42dca3;
@@ -312,8 +312,7 @@ a:focus {
     .caption {
         background-color: #000;
         position: absolute;
-        width: 29.4%;
-        height: 47%;
+        width: 30%;
         opacity: 0;
         transition: all ease 0.5s;
         -webkit-transition: all ease 0.5s;
@@ -391,7 +390,7 @@ a:focus {
     }
 
 .btn-default {
-    border: 1px solid #42dca3;
+    border: 3px solid #42dca3;
     color: #42dca3;
     background-color: transparent;
 }

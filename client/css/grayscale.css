@@ -282,24 +282,17 @@ a:focus {
 }
 
 .projects {
-    width: 30%;
-    height: 50%;
+    max-width: 200px;
+    position: relative;
     display: inline-block;
     vertical-align: top;
     border: 2px solid #42dca3;
-    margin:10px;
+    margin:10px ;
     background-color: #000;
 
 }
 
 
-    }
-
-    .project_list {
-
-        text-align: left;
-        margin-right: 10px;
-    }
 
 
     .modal-content {
@@ -312,25 +305,27 @@ a:focus {
     .caption {
         background-color: #000;
         position: absolute;
-        width: 30%;
         opacity: 0;
         transition: all ease 0.5s;
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
+        padding-top: 20%;
     }
 
     .caption-content{
-        margin: 40px;
+        width: 196px;
+        height: 100px;
     }
 
 
 .portfolio-modal .close-modal {
-    position: absolute;
+    margin-left: 85%; 
     width: 75px;
     height: 75px;
     background-color: transparent;
     top: 25px;
     right: 25px;
+
 
 }
     

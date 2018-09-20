@@ -1,8 +1,8 @@
 # profile
 this is my portefolio project
 
-As template i used gray-scale from bootsrap
+As template I used gray-scale from bootsrap
 
-i made a few changes i the style and lay out 
+I made a few changes I the style and lay out
 
-and to display my projects i added the modals 
+and to display my projects I added the modals

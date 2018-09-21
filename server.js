@@ -1,6 +1,16 @@
+
 var express = require('express');
+var fs = require('fs');
+var https = require('https');
 var path = require('path');
 var bodyParser = require('body-parser');
+
+
+var credentials = {
+      cert: fs.readFileSync('/etc/letsencrypt/live/cert.pem'),
+      key: fs.readFileSync('/etc/letsencrypt/live/privkey.pem')
+    };
+
 var app = express();
 
 
@@ -22,8 +32,8 @@ require('./server/config/routes.js')(app);
 
 
 
-app.listen(8000, function(){
+var server = https.createServer(credentials, app)
+
+server.listen(8000, function(){
 	console.log('welcome to my portofolio on 8000')
 })
-
- 

@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 
 var credentials = {
-      cert: fs.readFileSync('/etc/letsencrypt/live/name-of-your-site/cert.pem'),
-      key: fs.readFileSync('/etc/letsencrypt/live/name-of-your-site/privkey.pem')
+      cert: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/fullchain.pem'),
+      key: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/privkey.pem')
     };
 
 var app = express();

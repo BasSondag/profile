@@ -1,14 +1,16 @@
 
 var express = require('express');
 var fs = require('fs');
+var hhtp = require('http')
 var https = require('https');
 var path = require('path');
 var bodyParser = require('body-parser');
 
 
 var credentials = {
-      cert: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/fullchain.pem'),
-      key: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/privkey.pem')
+      cert: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/cert.pem', 'utf8'),
+      key: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/privkey.pem', 'utf8'),
+      ca: fs.readFileSync('/etc/letsencrypt/live/bassondag.com/chain.pem', 'utf8')
     };
 
 var app = express();
@@ -32,8 +34,13 @@ require('./server/config/routes.js')(app);
 
 
 
-var server = https.createServer(credentials, app)
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
 
-server.listen(8000, function(){
-	console.log('welcome to my portofolio on 8000')
-})
+httpServer.listen(80, () => {
+	console.log('HTTP Server running on port 80');
+});
+
+httpsServer.listen(443, () => {
+	console.log('HTTPS Server running on port 443');
+});

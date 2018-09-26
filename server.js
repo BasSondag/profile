@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
  // mongoose.connect('mongodb://localhost/mongoose_dashboard');
  //model
 // require('./server/config/mongoose.js')
- require('./server/config/routes.js')(app);
- app.listen(8000, function(){
+require('./server/config/routes.js')(app);
+app.listen(8000, function(){
 	console.log('welcome to my portofolio on 8000')
 })

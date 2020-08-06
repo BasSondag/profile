@@ -30,6 +30,11 @@ h6 {
     letter-spacing: 1px;
 }
 
+h1 {
+  margin-top: 10%;
+  -webkit-text-stroke: 3px #ff6b1f;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -45,7 +50,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #ff6b1f;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -96,7 +101,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #42dca3;
+    color: #ff6b1f;
 }
 
 .navbar-custom .nav li a {
@@ -120,12 +125,12 @@ a:focus {
 .navbar-custom .nav li.active {
     outline: 0;
 }
-
-.navbar-custom .nav li.active a {
-    color: #fff;
+.navbar-custom .nav li a:hover {
+    color: #1d9b6c;
 }
 
-.navbar-custom .nav li.active a:hover {
+.navbar-custom .nav li.active a:hover,
+.navbar-custom .nav li.active a {
     color: #fff;
 }
 
@@ -146,6 +151,7 @@ a:focus {
         background: #000;
     }
 }
+
 
 .intro {
     display: table;
@@ -175,10 +181,10 @@ a:focus {
     font-size: 18px;
 }
 
-#Skills {
+h2 {
     font-size: 3em;
-
-    margin-bottom: 0px;
+    -webkit-text-stroke: 1px #ff6b1f;
+    margin-bottom: 10px;
     text-align: center;
 }
 td {
@@ -194,6 +200,7 @@ td {
 }
 
 .logo {
+    border: 3px solid #ff6b1f;
     border-radius: 50%;
     width: 80px;
     height: :60px;
@@ -224,17 +231,22 @@ td {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #42dca3;
+    border: 2px solid #ff6b1f;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #42dca3;
+    color: #ff6b1f;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
-.btn-circle:hover,
+.btn-circle:hover {
+  outline: 0;
+  border: 2px solid #1d9b6c;
+  color: #1d9b6c;
+  background: rgba(255,255,255,.1);
+}
 .btn-circle:focus {
     outline: 0;
     border: 2px solid #fff;
@@ -315,8 +327,8 @@ td {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    border: 2px solid #42dca3;
-    margin:10px ;
+    border: 2px solid #ff6b1f;
+    margin: 10px;
     background-color: #000;
 
 }
@@ -329,7 +341,7 @@ td {
     }
 
     .caption:hover {
-    opacity: 1;
+      opacity: 1;
     }
     .caption {
         background-color: #000;
@@ -354,41 +366,42 @@ td {
     background-color: transparent;
     top: 25px;
     right: 25px;
-
-
+    cursor: pointer;
 }
 
-    .portfolio-modal .close-modal .lr {
+  .portfolio-modal .close-modal .lr {
     height: 75px;
     width: 4.5px;
     margin-left: 35px;
-    background-color: #42dca3;
+    background-color: #ff6b1f;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     z-index: 1051;
-    }
+}
 
         .portfolio-modal .close-modal .lr .rl {
-        height: 75px;
-        width: 4.5px;
-        background-color: #42dca3;
-        transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        z-index: 1052;
+          height: 75px;
+          width: 4.5px;
+          background-color:#ff6b1f;
+          transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          z-index: 1052;
         }
 
+
 #map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 6%;
+        padding-bottom: 15%;
+
     }
 
     .download-section {
@@ -415,17 +428,22 @@ td {
     }
 
 .btn-default {
-    border: 3px solid #42dca3;
-    color: #42dca3;
+    border: 3px solid #ff6b1f;
+    color: #ff6b1f;
     background-color: transparent;
 }
 
-.btn-default:hover,
+.btn-default:hover {
+  border: 3px solid #ff6b1f;
+  outline: 0;
+  color: #000;
+  background-color: #1d9b6c;
+}
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #ff6b1f;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #ff6b1f;
 }
 
 #project_button{
@@ -509,12 +527,12 @@ img::-moz-selection {
     display: inline;
     margin-right: 10px;
     padding-right: 10px;
-    border-right: 1px solid #1d9b6c;
+    border-right: 1px solid #ff6b1f;
 }
 
 .li-projects:first-child {
     padding-left: 10px;
-    border-left: 1px solid #1d9b6c;
+    border-left: 1px solid #ff6b1f;
 }
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);

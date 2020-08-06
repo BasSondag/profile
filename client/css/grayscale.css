@@ -446,6 +446,11 @@ td {
     background-color: #ff6b1f;
 }
 
+#email {
+    font-size: 6.5rem;
+
+}
+
 #project_button{
     margin-bottom: 40px;
 }
@@ -469,6 +474,9 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+    #email {
+      font-size: 3rem;
     }
 }
 
@@ -512,10 +520,7 @@ img::-moz-selection {
     display: inline-block;
     vertical-align: top;
 }
-#email {
-    font-size: 60px;
 
-}
 
 .ul-projects {
     list-style: none;
